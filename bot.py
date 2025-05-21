@@ -29,8 +29,8 @@ class Bot(Client):
         usr_bot_me = await self.get_me()
         self.uptime = datetime.now()
 
-        # Note => This is old method and it is not compatible with the latest telegram version (( YT or TG : @LazyDeveloperr ))
-        # So replacing the force sub method with req to join feature 🚀 (( YT or TG : @LazyDeveloperr ))
+        # Note => This is old method and it is not compatible with the latest telegram version (( YT or TG : @MRN_RIPPER ))
+        # So replacing the force sub method with req to join feature 🚀 (( YT or TG : @MRN_RIPPER ))
         #  
         # if FORCE_SUB_CHANNEL:
         #     try:
@@ -43,7 +43,7 @@ class Bot(Client):
         #         self.LOGGER(__name__).warning(a)
         #         self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
         #         self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL}")
-        #         self.LOGGER(__name__).info("\nBot Stopped. https://t.me/LazyDeveloper for support")
+        #         self.LOGGER(__name__).info("\nBot Stopped. https://t.me/MRN_RIPPER for support")
         #         sys.exit()
         # if FORCE_SUB_CHANNEL2:
         #     try:
@@ -56,7 +56,7 @@ class Bot(Client):
         #         self.LOGGER(__name__).warning(a)
         #         self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
         #         self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL2 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL2}")
-        #         self.LOGGER(__name__).info("\nBot Stopped. https://t.me/LazyDeveloper for support")
+        #         self.LOGGER(__name__).info("\nBot Stopped. https://t.me/MRN_RIPPER for support")
         #         sys.exit()
         
         try:
@@ -67,11 +67,11 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join channel https://t.me/LazyDeveloper for support")
+            self.LOGGER(__name__).info("\nBot Stopped. Join channel https://t.me/MRN_RIPPER for support")
             sys.exit() #if bot is admin & you are getting admin issue again and again then u can also remove this line of code 
 
         self.set_parse_mode(ParseMode.HTML)
-        self.LOGGER(__name__).info(f"Bot Running..!\n\n❤ with love  \n ıllıllı🚀🌟 L͙a͙z͙y͙D͙e͙v͙e͙l͙o͙p͙e͙r͙r͙ 🌟🚀ıllıllı")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\n❤ with love  \n ıllıllı🚀🌟 MRN_RIPPER 🌟🚀ıllıllı")
         self.username = usr_bot_me.username
         #web-response
         app = web.AppRunner(await web_server())
